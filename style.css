@@ -97,3 +97,122 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+
+
+
+
+
+@media (max-width: 280px) {
+    .home {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .search-container {
+        height: auto;
+    }
+    /* input[type="text"] {
+        width: 70px;
+        font-size: 14px;
+    } */
+   #locationInput{
+    width: 90px;
+        font-size: 14px;
+   }
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+    #eventsContainer {
+        padding: 10px;
+    }
+    .event {
+        padding: 5px;
+    }
+}
+@media (max-width: 480px) {
+    .home {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #locationInput{
+        width: 100px;
+            font-size: 14px;
+       }
+    /* input[type="text"] {
+        width: 100px;
+        margin-bottom: 10px;
+    } */
+    button {
+        width: 100%;
+    }
+    #eventsContainer {
+        padding: 15px;
+    }
+}
+@media (max-width: 680px) {
+    .home {
+        height: auto;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    /* input[type="text"] {
+        width: 200px;
+    }
+     */
+     #locationInput{
+        width: 200px;
+            font-size: 14px;
+       }
+    button {
+        font-size: 14px;
+    }
+    .event_link {
+        width: 50%;
+    }
+}
+@media (max-width: 880px) {
+    .home {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #eventsContainer {
+        grid-template-columns: 1fr;
+        padding: 25px 50px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    input[type="text"] {
+        width: 250px;
+    }
+}
+@media (max-width: 1080px) {
+    .home {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #eventsContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 25px 100px;
+    }
+}
+@media (max-width: 1280px) {
+    .home {
+        width: 70%;
+        margin-left: 15%;
+    }
+    #eventsContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
