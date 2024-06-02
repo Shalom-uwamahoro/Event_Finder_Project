@@ -103,26 +103,26 @@ button:hover {
 
 
 
+
 @media (max-width: 280px) {
     .home {
         padding: 10px;
     }
-    h1 {
-        font-size: 20px;
-    }
     .search-container {
         height: auto;
     }
-    /* input[type="text"] {
-        width: 70px;
-        font-size: 14px;
-    } */
+    h1 {
+        font-size: 10px;
+        margin-top: 5%;
+        color: #E6941B;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
    #locationInput{
-    width: 90px;
-        font-size: 14px;
+    width: 100%;
+    font-size: 10px;
    }
     button {
-        width: 100%;
+        width: 50%;
         font-size: 14px;
     }
     #eventsContainer {
@@ -166,10 +166,6 @@ button:hover {
     h1 {
         font-size: 40px;
     }
-    /* input[type="text"] {
-        width: 200px;
-    }
-     */
      #locationInput{
         width: 200px;
             font-size: 14px;
