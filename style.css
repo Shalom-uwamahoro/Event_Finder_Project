@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A1D1F8;
+}
+.home {
+    background-color: #020C68;
+    background-image: url('/media/bluebackg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #4CAF50;
+    height: 400px;
+    margin-top: 8%;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20px;
+}
+h1 {
+    margin-left: 0%;
+    font-size: 70px;
+    margin-top: 10%;
+    color: #E6941B;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #F0A315;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: rgb(8, 2, 59);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45A049;
+}
+.loading-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.events-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+#eventsContainer {
+    padding: 25px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.event {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.event_title {
+    color: #098710;
+}
+.event_link {
+    padding: 5px 8px;
+    border: 2px solid #fff;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+}
