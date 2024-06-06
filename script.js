@@ -44,3 +44,24 @@ const getEvents = () => {
         });
 };
 button.addEventListener('click', getEvents);
+// Our default events
+function displayAllEvents() {
+    const defaultCity = 'New York';
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&city=${defaultCity}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(getEvents(data._embedded));
+      })
+     .catch(error => {
+        console.error('Check your internet connection:', error);
+      });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    displayAllEvents();
+  });
+
+const cancelBtn= document.getElementById("cancel")
+cancelBtn.addEventListener("click", function(){
+    document.getElementById("locationInput").value = "";
+})
