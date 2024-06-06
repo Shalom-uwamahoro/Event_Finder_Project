@@ -8,7 +8,7 @@ const getEvents = () => {
     fetch(url)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not okay:', response.statusText);
+                throw new Error('Network response was not okay:' + response.statusText);
             }
             return response.json();
         })
@@ -20,11 +20,17 @@ const getEvents = () => {
                     const eventElement = document.createElement('div');
                     eventElement.classList.add('event');
                     const date = new Date(event.dates.start.dateTime).toLocaleString();
+                    const imageUrl = event.images ? event.images[0].url : 'https://picsum.photos/200';
                     eventElement.innerHTML = `
-                        <h4 class="event_title">${event.name}</h4>
-                        <p>Date: ${date}</p>
-                        <p>Venue: ${event._embedded.venues[0].name}</p>
-                        <a href="${event.url}" target="_blank" class="event_link">Get Tickets</a>
+                        <div class="event-image">
+                            <img src="${imageUrl}" alt="${event.name}">
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event_title">${event.name}</h4>
+                            <p>Date: ${date}</p>
+                            <p>Venue: ${event._embedded.venues[0].name}</p>
+                            <a href="${event.url}" target="_blank" class="event_link">Get Tickets</a>
+                        </div>
                     `;
                     eventsContainer.appendChild(eventElement);
                 });
