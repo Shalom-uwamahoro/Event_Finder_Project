@@ -18,20 +18,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    position:relative;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 4px solid #4CAF50;
-    height: 400px;
-    margin-top: 8%;
+    border-bottom: 4px solid  #E6941B;
+    height: 230px;
+    margin-top: 2%;
     width: 50%;
     margin-left: 25%;
     border-radius: 20px;
 }
 h1 {
     margin-left: 0%;
-    font-size: 70px;
-    margin-top: 10%;
+    padding-left: 0%;
+    font-size: 50px;
+    margin-top: 2%;
     color: #E6941B;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -60,7 +62,7 @@ button {
     transition: background-color 0.3s ease;
 }
 button:hover {
-    background-color: #45A049;
+    background-color:#f9b83e;
 }
 .loading-message {
     text-align: center;
@@ -123,6 +125,15 @@ button:hover {
     transform: scale(1.2);
 }
 
+
+#cancel{
+    width: 30px;
+    height: 30px;
+    top:140px;
+    left: 520px;
+    bottom: 0px;
+    position: absolute;
+}
 
 
 
