@@ -64,4 +64,15 @@ function displayAllEvents() {
 const cancelBtn= document.getElementById("cancel")
 cancelBtn.addEventListener("click", function(){
     document.getElementById("locationInput").value = "";
+
 })
+
+
+
+
+
+
+
+
+
+
