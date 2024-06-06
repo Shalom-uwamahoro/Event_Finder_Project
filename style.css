@@ -73,31 +73,55 @@ button:hover {
     padding: 20px;
     justify-content: center;
 }
-#eventsContainer {
-    padding: 25px 150px;
+.events-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .event {
-    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-.event_title {
-    color: #098710;
-}
-.event_link {
-    padding: 5px 8px;
-    border: 2px solid #fff;
-    background-color: blue;
-    color: #fff;
-    font-weight: 600;
-    width: 30%;
-    border-radius: 5px;
+    align-items: center;
     text-align: center;
 }
-
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+}
+.event p {
+    margin: 5px 0;
+}
+.event:hover {
+    transform: translateY(-5px);
+}
+.event_title {
+    margin-top: 0;
+    color: #4CAF50;
+}
+.event_link {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 8px;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.event_link:hover {
+    transform: scale(1.2);
+}
 
 
 
