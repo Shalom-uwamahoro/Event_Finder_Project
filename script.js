@@ -1,6 +1,7 @@
 const apiKey = 'xCVvAJSve3E08MZ6dNepSezkRNCFgOeU';
 const button = document.getElementById('searchButton');
 const eventsContainer = document.getElementById('eventsContainer');
+// const city = document.getElementById('locationInput').value;
 const getEvents = () => {
     const city = document.getElementById('locationInput').value;
     const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&city=${city}`;
@@ -61,11 +62,13 @@ function displayAllEvents() {
     displayAllEvents();
   });
 
-const cancelBtn= document.getElementById("cancel")
-cancelBtn.addEventListener("click", function(){
-    document.getElementById("locationInput").value = "";
 
-})
+const clearInput= document.getElementById("locationInput");
+clearInput.addEventListener("keydown", function(){
+      displayAllEvents()
+});
+
+
 
 
 
