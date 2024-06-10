@@ -10,11 +10,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7d83c7;
+    background-color: #7D83C7;
     /* background-image: url('./media/back2.jpeg');
     background-repeat: no-repeat;
     background-size:contain; */
-
 }
 .home {
     /* background-color: #020C68; */
@@ -119,11 +118,13 @@ button:hover {
     display: block;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 5px 8px;
+    padding: 5px 5px;
     background-color: blue;
     color: #FFFFFF;
     font-weight: 600;
-    width: 50%;
+    font-size: 18px;
+    /* width: 70%; */
+    width: 150px;
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -161,8 +162,11 @@ button:hover {
     .event_link {
         padding: px 0px;
         font-weight: 20;
-        width: 70%;
         border-radius: 5px;
+        font-weight: 400;
+        font-size: 10px;
+        /* width: 70%; */
+        width: 120px;
     }
     .event img {
         width: 50%;
@@ -256,6 +260,9 @@ button:hover {
         padding: px 0px;
         font-weight: 20;
         width: 150px;
+        font-weight: 300;
+        font-size: 10px;
+        /* width: 70%; */
         border-radius: 5px;
     }
 }
@@ -270,7 +277,9 @@ button:hover {
     }
     .event_link {
         padding: px 0px;
-        font-weight: 20;
+        font-weight: 30px;
+        font-weight: 400;
+        font-size: 13px;
         width: 290px;
         border-radius: 5px;
     }
@@ -311,6 +320,8 @@ button:hover {
         padding: 5px 8px;
         font-weight: 600;
         width: 65px;
+        font-weight: 400;
+        font-size: 14px;
         border-radius: 5px;
         text-align: center;
         transition: transform 0.3s ease;
@@ -380,8 +391,3 @@ button:hover {
          }
      }
 }
-
-
-
-
-
