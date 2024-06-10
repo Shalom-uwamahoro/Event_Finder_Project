@@ -38,7 +38,7 @@ h1 {
     padding-left: 0%;
     font-size: 50px;
     margin-top: 2%;
-    color: #f9fcf9;
+    color: #E6941B;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .search-container {
@@ -48,17 +48,19 @@ h1 {
     height: 80px;
 }
 input[type="text"] {
-    padding: 10px;
+    padding: 5px;
+    height: 50px;
     border: none;
-    border-radius: 5px 0 0 5px;
-    width: 300px;
+    border-radius: 15px 0 0 15px;
+    width: 250px;
     font-size: 16px;
 }
 button {
     padding: 10px 20px;
     background-color: #F0A315;
     border: none;
-    border-radius: 0 5px 5px 0;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
     color: rgb(8, 2, 59);
     font-weight: 700;
     cursor: pointer;
@@ -73,13 +75,12 @@ button:hover {
     padding: 20px;
     font-size: 18px;
 }
-.events-container {
+/* .events-container {
     display: grid;
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    margin-top: 5%;
-}
+} */
 .events-container {
     display: grid;
     gap: 20px;
@@ -100,7 +101,7 @@ button:hover {
 }
 .event img {
     width: 100%;
-    height: auto;
+    height: 190px;
     border-radius: 5px 5px 0 0;
     margin-bottom: 15px;
 }
@@ -116,12 +117,13 @@ button:hover {
 }
 .event_link {
     display: block;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 5px 8px;
     background-color: blue;
     color: #FFFFFF;
     font-weight: 600;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -129,9 +131,6 @@ button:hover {
 .event_link:hover {
     transform: scale(1.2);
 }
-
-
-
 #cancel{
     width: 20px;
     height: 20px;
@@ -140,8 +139,6 @@ button:hover {
     bottom: 0px;
     position: absolute;
 }
-
-
 @media (max-width: 280px) {
     .home {
         padding: 10px;
@@ -234,9 +231,21 @@ button:hover {
         width: 200px;
             font-size: 14px;
        }
-    button {
-        font-size: 14px;
+       button {
+        padding: 0px 0px;
+        height: 30px;
+        width: 60px;
+        border-radius: 30px;
+        font-weight: 100;
+        cursor: pointer;
+        font-size: 15px;
+        transition:0.3s ease;
     }
+    #locationInput{
+        width: 190px;
+        height: 40px;
+        font-size: 10px;
+       }
     .event img {
         width: 15px;
         height: 30px;
@@ -265,9 +274,20 @@ button:hover {
         width: 290px;
         border-radius: 5px;
     }
+    .event {
+        border-radius: 5px;
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 97px;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .event img {
-        width: 10px;
-        height: 10px;
+        width: 70px;
+        height: 190px;
         border-radius: 5px 5px 0 0;
         margin-bottom: 15px;
     }
@@ -360,3 +380,8 @@ button:hover {
          }
      }
 }
+
+
+
+
+
