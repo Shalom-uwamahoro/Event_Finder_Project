@@ -17,7 +17,7 @@ Ticketmaster API: Used to fetch event data and updates dynamically.
 
 **How to Use**
 Clone the Repository:
-git clone https://github.com/Shalom-uwamahoro/event-finder.git
+git clone https://github.com/Shalom-Uwamahoro/Event_Finder_Project.git
 
 Navigate to the Project Directory:
 cd event-finder
